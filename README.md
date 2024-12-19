@@ -7,7 +7,7 @@ This repository contains an Ansible playbook that installs Docker and Nginx on y
 Ensure that you have the following set up before running the playbook:
 
 - Ansible installed on your local machine
-- A remote server to run the playbook on (I used EC2 instance)
+- A remote servers to run the playbook on (I used EC2 instance)
 - SSH access to the server
 - The `inventory.ini` file properly configured with your server's details
 
