@@ -11,11 +11,16 @@ Ensure that you have the following set up before running the playbook:
 - SSH access to the server
 - The `inventory.ini` file properly configured with your server's details
 
-- **docker/tasks/main.yml**: Contains tasks to install Docker and ensure its service is running.
-- **nginx/tasks/main.yml**: Contains tasks to install Nginx, copy an `index.html` file to the web root, and ensure the Nginx service is running.
-- **inventory.ini**: An inventory file defining the hosts to be configured.
-- **nginx_docker.yaml**: The main playbook that runs both Docker and Nginx roles.
-- **files/index.html**: The HTML file served by the Nginx web server.
+### Key Files and Their Roles
+
+| File/Directory           | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **docker/tasks/main.yml** | Contains tasks to install Docker and ensure its service is running.         |
+| **nginx/tasks/main.yml**  | Contains tasks to install Nginx, copy an `index.html` file to the web root, and ensure the Nginx service is running. |
+| **inventory.ini**         | An inventory file defining the hosts to be configured.                     |
+| **nginx_docker.yaml**     | The main playbook that runs both Docker and Nginx roles.                   |
+| **files/index.html**      | The HTML file served by the Nginx web server.                              |
+
 
 ## How to Use
 
